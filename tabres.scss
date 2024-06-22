@@ -1,0 +1,589 @@
+$ipad-content-width: 680px;
+$ipad-width: 744px;
+$mobile-content-width: 343px;
+$mobile-width: 375px;
+$family-font: 'Poppins';
+$hover-color: #F0FDF9;
+$box-color: #125D56;
+
+h1,
+p,
+h3,
+h6,
+h5,
+h4,
+h2,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .sideMenu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 680px;
+        gap: 0px;
+        padding-top: 10px;
+        margin: auto;
+        width: 100%;
+
+        .menuLink {
+            display: flex;
+            grid-column: 1/span3;
+            
+margin-right: 0px;
+margin-top: 0;
+            width: 780px;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            align-self: center;
+            position: absolute;
+            top:40px;
+            right: 30px;
+            z-index: 1;
+            background-color: #FFFFFF;
+
+            .type{
+                list-style-type: none;
+                gap:10px;
+                max-width: 680px;
+                width: 100%;
+
+                .over{
+
+                    max-width:680px;
+padding: 6px 32px 6px 42px;
+gap: 10px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+color:  #475467;
+
+                }
+                .over:hover{
+                  background-color: #F0FDF9;  
+                }
+            }
+
+        }
+
+        input[type="checkbox"]:checked~.menuLink {
+
+            height: 200px;
+        }
+
+    }
+
+
+
+    .subDisplay {
+        display: block;
+        max-width: 744px;
+        display: flex;
+        flex-direction: column;
+        padding: 48px 32px 0px 32px;
+        gap: 48px;
+        width: 100%;
+
+
+
+
+
+
+        .groupDisplay {
+            display: flex;
+            flex-direction: column;
+            width: Fill (680px)px;
+            height: Hug (236px)px;
+            gap: 20px;
+            opacity: 0px;
+
+            .displayMore {
+                height: 0;
+                overflow: hidden;
+            }
+
+            
+
+            .displayBox {
+                
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 0.5px solid #D0D5DD;
+
+                input {
+                    margin: 0;
+                }
+                    .displayTitle{
+                        font-family: Poppins;
+                       
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color:#475467
+
+
+                    }
+            }
+
+          
+            
+        }
+
+        // .displayBox{
+        //     .toggle:checked ~ .groupDisplay{
+        //         .displayMore{
+        //             he
+        //         }
+        //     } 
+        // }
+        
+    input[type="checkbox"]:checked~.more {
+        height: 100%;
+    }
+    }
+
+    .container {
+        max-width: $ipad-width;
+        margin: 0 auto;
+    }
+
+    nav {
+        max-width: 744px;
+        padding: 0 32px 0 ;
+
+
+        .head {
+            display: none;
+
+
+        }
+    }
+
+    .fullFooter {
+        padding: 48px, 32px, 0px, 32px;
+        justify-content: center;
+        align-items: center;
+
+        .subFooter {
+            display: none;
+        }
+        footer{
+            max-width: 680px;
+padding: 32px 0px 32px 0px;
+gap: 0px;
+justify-content: space-between;
+opacity: 0px;
+width: 100%;
+
+           
+
+            .footContent{
+         max-width: 288px;                
+            }
+        }
+    }
+
+
+
+    header {
+        max-width: 744px;
+        padding: 64px 32px 64px 32px;
+        gap: 32px;
+        opacity: 0px;
+
+        .headerImg {
+            max-width: 500px;
+
+            
+        }
+
+        .headerContent {
+            max-width: 680px;
+
+            gap: 48px;
+            opacity: 0px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            max-width: 680px;
+
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            .skuP {
+                text-align: center;
+
+            }
+        }
+
+        .tryBtn1 {
+            width: 680px;
+            height: Hug (60px)px;
+            padding: 16px 28px 16px 28px;
+            gap: 12px;
+            border-radius: 8px;
+            opacity: 0px;
+
+        }
+
+
+    }
+
+    .layoutBox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+
+        .layoutImgbox {
+            max-width: 500px;
+
+            .layoutImg {
+                max-width: 500px;
+            }
+        }
+
+        .layoutContent {
+            max-width: 680px;
+            gap: 48px;
+            opacity: 0px;
+
+            .cardsBox {
+                max-width: 680px;
+                gap: 48px;
+                opacity: 0px;
+
+                .cardsBox1 {
+                    max-width: 324px;
+
+                    .cardType {
+                        max-width: 324px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .productContainer {
+        max-width: 1024px;
+
+        .productBox {
+            max-width: 744px;
+
+            .productContent {
+                max-width: 744px;
+
+                .middleContent {
+                    text-align: center;
+                }
+
+                .bottomContent {
+                    text-align: center;
+                }
+
+            }
+
+            .productCard {
+
+                .product {
+
+                    grid-template-columns: repeat(2, 1fr);
+
+                }
+            }
+        }
+    }
+
+    article {
+        flex-direction: column-reverse;
+
+
+        .articleImgBox {
+            max-width: 500px;
+
+            .articleImg {
+                max-width: 500px;
+            }
+        }
+
+        .articleContent {
+            max-width: 680px;
+            gap: 48px;
+
+        }
+
+
+
+    }
+
+    .mainBottom {
+
+
+        max-width: 680px;
+        height: Hug (330px)px;
+        padding: 64px 32px 64px 32px;
+        gap: 64px;
+        border-radius: 20px;
+        opacity: 0px;
+
+
+    }
+    
+}
+
+.firstchild1{
+    display: none;
+}
+#firstchild:checked ~ .firstchild1{
+
+    display: block;
+    height: 1000px;
+}
+
+
+
+
+
+
+@media only screen  and (max-width:680px) {
+.container{
+    max-width: 375px;
+    margin: 0 auto;
+
+}
+.sideMenu{
+
+
+    .menuLink{
+        display: flex;
+        grid-column: 1/span3;
+        margin-right: 0px;
+        margin-top: 0;
+        width: 375px;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        align-self: center;
+        position: absolute;
+        top: 40px;
+        left:-10px;
+        z-index: 1;
+        background-color: #FFFFFF;
+    }
+}
+    nav{
+        max-width: 375px;
+padding: 16px 0px 0px 0px;;
+justify-content: space-between;
+margin: 0 auto;
+padding: 0 24px;
+
+        
+
+    }
+
+    header{
+        max-width: 375px;
+padding: 64px 16px 64px 16px;
+gap: 32px;
+opacity: 0px;
+margin: 0 auto;
+
+.headerContent{
+    max-width: 343px;
+    gap: 32px;
+    justify-content: center;
+.content{
+    max-width: 343px;
+
+    .headTitle{
+        
+        font-family: Poppins;
+font-size: 36px;
+font-weight: 600;
+line-height: 44px;
+text-align: left;
+
+
+    }
+    .vectorImg{
+
+        width: 343px;
+height: 12px;
+
+border: 2px 0px 0px 0px;
+
+
+    }
+
+    .headText{
+        font-family: Poppins;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+text-align: left;
+
+    }
+}
+    .tryBtn1{
+        max-width: 343px;
+padding: 12px 20px 12px 20px;
+gap: 8px;
+border-radius: 8px ;
+opacity: 0px;
+
+    }
+}
+.headerImage{
+    max-width: 373px;
+    .headerImg{
+        max-width: 373px;
+        border-radius: 16px;
+        opacity: 0px;
+    }
+
+
+
+}
+
+    }
+    
+
+    aside{
+
+        max-width: 375px;
+        margin: auto;
+
+        .asideContent{
+            max-width: 343px;
+            gap: 32px;
+            opacity: 0px;
+
+            .para{
+                text-align: center;
+            }
+        }
+    }
+
+    .layoutBox{
+        max-width: 375px;
+        margin: auto;
+.layoutContent{
+        .cardsBox{
+            max-width: 343px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+        .layoutImgbox{
+            max-width: 373px;
+
+            .layoutImg{ 
+                max-width: 373px;
+            }
+        }
+
+
+    }
+    
+
+
+.productContainer{
+    max-width: 680px;
+    .productBox{
+        max-width: 343px;
+        .productContent{
+            max-width: 343px;
+            .middleContent{
+                text-align: center;
+            }
+            .bottomContent{
+                text-align: center;
+            }
+        }
+        .productCard{
+            max-width: 343px;
+            .product{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}
+
+
+
+
+
+    article{
+        max-width: 375px;
+        .articleImgBox{
+            max-width: 343px;
+            .articleImg{
+                max-width: 343px;
+            }
+        }
+        .articleContent{
+            max-width: 343px;
+            gap: 32px;
+            opacity: 0px;
+            .artticleTitle{
+                text-align: center;
+                font-family: Poppins;
+font-size: 30px;
+font-weight: 600;
+line-height: 38px;
+
+
+            }
+            .para{
+                text-align: center;
+            }
+        }
+    }
+
+    .mainBottom{
+        max-width: 375px;
+        
+        padding: 64px 16px 64px 16px;
+        gap: 64px;
+        border-radius: 20px;
+        opacity: 0px;
+
+       
+    }
+    .fullFooter{
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 375px;
+
+        .subDisplay{
+            max-width: 343px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        footer{
+            flex-direction: column;
+            min-width: 343px;
+            justify-content: center;
+            align-items: left;
+
+           .footIcon{
+            padding-left: 20px;
+           }
+        }
+    }
+}
